@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// variables
+
+$text-sub-heading: hsl(276, 100%, 81%);
+$text-chat-left: hsl(276, 55%, 52%);
+$text-chat-right: hsl(271, 15%, 43%);
+$text-placeholder: hsl(206, 6%, 79%);
+$text-main-heading: hsl(271, 36%, 24%);
+$text-p: hsl(270, 7%, 64%);
+$gradient-1: hsl(293, 100%, 63%);
+$gradient-2: hsl(264, 100%, 61%);
+$color-white: hsl(0, 0%, 100%);
+$color-bg: hsl(270, 20%, 96%);
+$color-submit-bg: hsl(271, 36%, 24%);
+$color-radio-button-bg: hsl(289, 100%, 72%);
+
+$left-border: 10px 10px 10px 5px;
+$right-border: 10px 10px 5px 10px;
+
+// responsive breakpoint
+
+@mixin laptop {
+    @media screen and (min-width: 1200px) {
+        @content; 
+    }
+}

@@ -1,0 +1,48 @@
+@include laptop {
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    #bg-shape-top {
+        width: 500px;
+        height: 700px;
+        background: linear-gradient(45deg, $gradient-2, $gradient-1 125%);
+        border-radius: 0 0 250px 250px;
+        left: -80px;
+        top: 0;
+    }
+
+    #bg-shape-bottom {
+        bottom: 0;
+        right: -175px;
+        width: 500px;
+        height: 685px;
+        border-radius: 250px 250px 0 0;
+    }
+
+    #wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    main {
+        #phone {
+            margin: 0 9.5rem 0 11.5rem;
+        }
+    }
+
+    section {
+        width: 500px;
+        margin: 0;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 3rem;
+    }
+}

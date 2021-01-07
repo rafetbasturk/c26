@@ -1,0 +1,292 @@
+@import "config";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background: $color-bg;
+    color: $text-p;
+    position: relative;
+    margin: auto;
+    max-width: 1440px;
+    padding-bottom: 3rem;
+}
+
+#bg-shape-top {
+    width: 120%;
+    height: 505px;
+    background: linear-gradient(45deg, $gradient-2, $gradient-1 200%);
+    border: 1px solid $text-chat-left;
+    border-radius: 0 0 50% 50%;
+    z-index: -1;
+    position: absolute;
+    left: -70%;
+    top: -6.5rem;
+}
+
+#bg-shape-bottom {
+    width: 120%;
+    height: 505px;
+    background: rgba(128, 128, 128, 0.048);
+    border-radius: 50% 50% 0 0;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: -70%;
+}
+
+main {
+    
+
+    #phone {
+        width: 250px;
+        height: 505px;
+        background: $color-bg;
+        border: 10px solid $color-white;
+        border-radius: 25px;
+        margin: 6.5rem auto 0;
+        box-shadow: -5px 10px 20px 2px;
+    }
+
+    #top{
+        width: 100%;
+        height: 65px;
+        background: linear-gradient(90deg, $gradient-2, $gradient-1);
+        border-radius: 15px 15px 5px 5px;
+        border: 1px solid $text-chat-left;
+        position: relative;
+        padding: 2.5rem 1rem 1rem;
+    }
+
+    #top-top{
+        width: 120px;
+        height: 18px;
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: $color-white;
+        border: 1px solid $text-chat-left;
+        border-top: none;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-info{
+            display: flex;
+            align-items: center;
+        }
+
+        #avatar {
+            display: flex;
+            align-items: center;
+        }
+
+        #image-wrapper {
+            width: 26px;
+            height: 26px;
+            background: $color-white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $text-chat-left;
+            margin-right: 1rem;
+        }
+
+        img {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+        }
+
+        #avatar-info {
+            p {
+                color: $color-bg;
+                font-size: 1.1rem;
+                font-weight: 500;
+                margin: .2rem 0;
+                &:nth-of-type(2) {
+                    font-size: .8rem;
+                    color: $color-radio-button-bg;
+                }
+            }
+        }
+    }
+
+    ion-icon {
+        color: $color-white;
+        
+    }
+
+    #text-area {
+        margin: 1.2rem 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .sent {
+            max-width: 130px;
+            background: hsla(268, 7%, 64%, 0.192);
+            padding: .5rem .9rem;
+            border-radius: $left-border;
+            margin-bottom: .8rem;
+        }
+
+        .text-left {
+            color: $text-chat-left;
+            font-size: .8rem;
+            line-height: 1.5;
+        }
+
+        #dog-pics {
+            align-self: flex-end;
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+            
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                &:nth-of-type(2) {
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        .incoming {
+            max-width: 130px;
+            background: $color-white;
+            padding: .5rem .9rem;
+            border-radius: $right-border;
+            margin-bottom: .8rem;
+            align-self: flex-end;
+        }
+
+        .text-right {
+            color: $text-chat-right;
+            font-size: .8rem;
+            line-height: 1.5;
+        }
+
+        .price {
+            width: 160px;
+            background: linear-gradient(90deg, $gradient-1, $gradient-2);
+            padding: .7rem;
+            border-radius: $left-border;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: .8rem;
+
+            div {
+                display: flex;
+            }
+
+            .radio {
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                border: 1px solid $color-radio-button-bg;
+                margin-right: .75rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .radio-button {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: $color-radio-button-bg;
+            }
+
+            p {
+                font-size: .85rem;
+                color: $text-sub-heading;
+                margin-top: .1rem;
+            }
+
+            span {
+                color: $color-bg;
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-right: .8rem;
+            }
+        }
+
+        form {
+            background: $color-white;
+            width: 100%;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem;
+            border-radius: 18px;
+            margin-top: .8rem;
+
+            input {
+                font-size: .9rem;
+                color: $text-placeholder;
+                padding: .5rem 1.5rem;
+                border: none;
+                &:focus {
+                    outline: none;
+                }
+                &::placeholder {
+                    color: $text-placeholder;
+                }
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                background: $color-submit-bg;
+                border: none;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+section {
+    margin-top: 3.5rem;
+    padding: 3rem;
+    text-align: center;
+
+    h2 {
+        color: $text-main-heading;
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+}
+
+footer {
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@import "responsive";
