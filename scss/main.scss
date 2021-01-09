@@ -128,6 +128,7 @@ main {
     }
 
     #text-area {
+        width: 100%;
         height: 425px;
         padding: 1rem;
         display: flex;
@@ -178,6 +179,7 @@ main {
 
         .price {
             width: 160px;
+            height: min-content;
             background: linear-gradient(90deg, $gradient-1, $gradient-2);
             padding: .7rem;
             border-radius: $left-border;
@@ -228,7 +230,7 @@ main {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: .4rem;
+            padding: .5rem;
             border-radius: 18px;;
             margin: .5rem 0;
 
